@@ -36,5 +36,3 @@ There is also a file attached in the repository where the recommendation system 
 
 ![Sample](https://github.com/rdcodings/Netflix-Movie-and-Series-Recommendation-System/blob/4b2594f3afe80616c54098e364014ff79e7f2ade/sample.JPG)
 
-
-Author - *Rajarshi Das*
