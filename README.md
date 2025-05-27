@@ -1,6 +1,4 @@
-# Netflix Movie and Series Recommendation System
-![Netflix Movie and Series Recommendation System](https://github.com/rdcodings/Netflix-Movie-and-Series-Recommendation-System/blob/5a88d46d337310b997c30dbfe60a59faebb8c3e7/Netflix.webp)
-
+# Netflix Movie and Series Recommendation Syste
 ## Introduction
 The Netflix Movie and Series Recommendation System is a project designed to recommend both movies and series based on the available dataset from Netflix up to 2021. This system leverages different recommendation algorithms to provide personalized suggestions for users looking to explore new content on Netflix.
 
@@ -33,6 +31,4 @@ This project demonstrates the effectiveness of content-based filtering technique
 There is also a file attached in the repository where the recommendation system is deployed using Streamlit, allowing users to interact with the system through a web interface.
 
 ---
-
-![Sample](https://github.com/rdcodings/Netflix-Movie-and-Series-Recommendation-System/blob/4b2594f3afe80616c54098e364014ff79e7f2ade/sample.JPG)
-
+In case Of any query feel free to mail me at amanraj07331@gmail.com
