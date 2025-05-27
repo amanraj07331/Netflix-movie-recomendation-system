@@ -1,28 +1,59 @@
 # Netflix Movie and Series Recommendation Syste
 ## Introduction
-The Netflix Movie and Series Recommendation System is a project designed to recommend both movies and series based on the available dataset from Netflix up to 2021. This system leverages different recommendation algorithms to provide personalized suggestions for users looking to explore new content on Netflix.
+This project presents a Netflix Movie and Series Recommendation System built using data available up to 2024. It employs content-based filtering techniques to offer personalized recommendations to users, enhancing their experience by helping them discover movies and TV shows that align with their preferences.
 
 ## Objective
-The primary objective of this project is to develop a recommendation system that can suggest relevant movies and series based on user preferences. By utilizing content-based filtering techniques and analyzing various features from the dataset, the system aims to enhance user experience by offering tailored recommendations.
+The primary goal is to develop a recommendation system that suggests relevant and engaging content (movies and series) based on user interests. By leveraging textual and metadata features such as titles, genres, cast, and descriptions, the system generates intelligent recommendations using natural language processing and similarity metrics.
 
 ## Datasets
-1. **Netflix Dataset**: Contains comprehensive information about movies and series available on Netflix until 2021. Key features include titles, descriptions, cast, director, and genre.
+1. **Netflix Dataset**: Contains comprehensive information about movies and series available on Netflix until 2024. Key features include titles, descriptions, cast, director, and genre.
 2. **IMDb Dataset**:
    - `IMDb ratings.csv`: Includes IMDb ratings data.
    - `IMDb movies.csv`: Contains information about movie titles, years, and genres.
 
 ## Methodology
-1. **Data Preprocessing**: 
-   - Clean and preprocess the Netflix dataset by handling missing values and converting text features to a uniform format.
-   - Use TF-IDF Vectorizer for analyzing movie descriptions to compute cosine similarity and generate recommendations.
-   - Implement content-based filtering on multiple features including title, director, cast, genre, and description to refine recommendations.
+1. Data Preprocessing
+Cleaning and standardizing textual data
 
-2. **Recommendation Algorithms**:
-   - **Content-Based Recommendation System**: Utilizes TF-IDF Vectorizer to analyze movie descriptions and compute cosine similarity for generating recommendations based on the content similarity.
-   - **Content-Based Filtering on Multiple Metrics**: Combines various features from the dataset into a "soup" of words, which is then analyzed using Count Vectorizer to compute cosine similarity and provide recommendations based on multiple features.
+Handling missing values
 
-3. **Deployment**: 
-   - The recommendation system is deployed using Streamlit, allowing users to interact with the system via a web interface. The deployment script is included in the repository.
+Creating a unified text format for analysis
+
+2. Feature Engineering
+TF-IDF Vectorization for analyzing movie/series descriptions
+
+Creation of a "feature soup" combining title, cast, genre, director, and description
+
+Count Vectorization for handling multiple combined textual features
+
+3. Recommendation Techniques
+TF-IDF Based Content Filtering
+
+Calculates cosine similarity between descriptions
+
+Returns recommendations based on semantic content similarity
+
+Multi-Feature Content Filtering
+
+Builds a weighted feature soup
+
+Uses Count Vectorizer + Cosine Similarity to provide nuanced suggestions
+
+4. Deployment
+Deployed using Streamlit, enabling an interactive web-based interface
+
+Users can input a movie/series name and receive real-time recommendations
+
+The deployment code is included in the repository
+
+🚀 How to Run
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the Streamlit app
+streamlit run app.py
+
+
 
 ## Conclusion
 This project demonstrates the effectiveness of content-based filtering techniques for building a recommendation system tailored to both movies and series. By analyzing various features from the Netflix dataset and incorporating additional IMDb data, the system provides users with relevant suggestions. For practical use, the system has been deployed using Streamlit, and a file with the Streamlit deployment code is attached in the repository.
